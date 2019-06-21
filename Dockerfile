@@ -16,7 +16,7 @@ WORKDIR /home/learner
 
 # needed by nvm install
 # change it to your required node version
-ENV NODE_VERSION 5.1.0
+ENV NODE_VERSION v10.16.0
 ENV NVM_DIR /home/learner/.nvm
 
 # install the specified node version and set it as the default one, install the global npm packages
