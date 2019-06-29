@@ -30,6 +30,7 @@ RUN . ~/.nvm/nvm.sh && \
 # expose the filesystem - needed for the file browser and editor
 # in adventure time
 RUN echo "expose-fs >> .fs.out 2>> .fs.err &" >> /home/learner/.bashrc
+EXPOSE :8441
 
 # more readable terminal prompt
 RUN echo "export PS1=\"\[$(tput bold)\]\[\033[38;5;75m\]\u\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;232m\]@:\[$(tput sgr0)\]\[\033[38;5;9m\]\W\[$(tput sgr0)\]\[\033[38;5;232m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\"" >> /home/learner/.bashrc
